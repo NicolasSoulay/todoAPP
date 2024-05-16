@@ -1,13 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>tasks</ion-title>
+    <ion-title *ngIf="list !== undefined">{{ list.name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tasks</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" *ngIf="list !== undefined">
+  <ion-list *ngFor="let task of list.tasks">
+
+    <ion-item *ngIf="list.completed === false">
+      <ion-checkbox *ngIf="task.completed === false">{{ task.label }}</ion-checkbox>
+      <ion-checkbox *ngIf="task.completed === true" checked="true">{{ task.label }}</ion-checkbox>
+    </ion-item>
+
+    <ion-item *ngIf="list.completed === true">
+      <ion-checkbox disabled="true" checked="true">{{ task.label }}</ion-checkbox>
+    </ion-item>
+
+  </ion-list>
 </ion-content>

@@ -3,33 +3,29 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'lists',
-    loadChildren: () => import('./pages/lists/lists.module').then(m => m.ListsPageModule)
-  },
-  {
     path: '',
     redirectTo: 'listes',
     pathMatch: 'full'
   },
   {
     path: 'archives',
-    loadChildren: () => import('./pages/archives/archives.module').then( m => m.ArchivesPageModule)
+    loadChildren: () => import('./pages/archives/archives.module').then(m => m.ArchivesPageModule)
   },
   {
     path: 'settings',
-    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+    loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsPageModule)
   },
   {
     path: 'lists',
-    loadChildren: () => import('./pages/lists/lists.module').then( m => m.ListsPageModule)
+    loadChildren: () => import('./pages/lists/lists.module').then(m => m.ListsPageModule)
   },
   {
-    path: 'tasks',
+    path: 'tasks/:id',
     loadChildren: () => import('./pages/tasks/tasks.module').then(m => m.TasksPageModule)
   },
   {
     path: 'models',
-    loadChildren: () => import('./pages/models/models.module').then( m => m.ModelsPageModule)
+    loadChildren: () => import('./pages/models/models.module').then(m => m.ModelsPageModule)
   },
 ];
 

@@ -14,7 +14,6 @@ export class ListsPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.lists = this.listService.getAll().filter((list) => list.completed === false);
+    this.lists = this.listService.getAll().filter((list) => !list.completed);
   }
-
 }

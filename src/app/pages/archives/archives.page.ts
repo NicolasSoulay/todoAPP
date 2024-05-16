@@ -14,7 +14,7 @@ export class ArchivesPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.lists = this.listService.getAll().filter((list) => list.completed === true);
+    this.lists = this.listService.getAll().filter((list) => list.completed);
   }
 
 }

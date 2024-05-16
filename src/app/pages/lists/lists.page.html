@@ -10,9 +10,9 @@
 <ion-content [fullscreen]="true">
   <ion-list *ngFor="let list of lists">
 
-    <ion-item>
+    <ion-button expand="block" size="large" [routerLink]="['/tasks', list.id]">
       <ion-label>{{ list.name }}</ion-label>
-    </ion-item>
+    </ion-button>
 
   </ion-list>
 </ion-content>
