@@ -7,12 +7,28 @@
 <ion-content [fullscreen]="true" *ngIf="list !== undefined">
   <ion-list *ngFor="let task of list.tasks">
 
+    <!-- LISTE -->
     <ion-item *ngIf="list.completed === false">
+      <ion-button (click)="readLabel(task.label)" *ngIf="isScreenReaderEnabled">
+        <ion-icon name="volume-medium-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="addImage(task)">
+        <ion-icon name="camera-outline"></ion-icon>
+      </ion-button>
+      <ion-img [src]="[task.imageUrl]" style="width: 100px;"></ion-img>
       <ion-checkbox *ngIf="task.completed === false">{{ task.label }}</ion-checkbox>
       <ion-checkbox *ngIf="task.completed === true" checked="true">{{ task.label }}</ion-checkbox>
     </ion-item>
 
+
+    <!-- ARCHIVE -->
     <ion-item *ngIf="list.completed === true">
+      <ion-button (click)="readLabel(task.label)" *ngIf="isScreenReaderEnabled">
+        <ion-icon name="volume-medium-outline"></ion-icon>
+      </ion-button>
+      <ion-button (click)="addImage(task)">
+        <ion-icon name="camera-outline"></ion-icon>
+      </ion-button>
       <ion-checkbox disabled="true" checked="true">{{ task.label }}</ion-checkbox>
     </ion-item>
 

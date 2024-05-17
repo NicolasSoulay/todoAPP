@@ -2,4 +2,5 @@ export interface Task {
   id: string
   label: string;
   completed: boolean;
+  imageUrl?: string;
 }

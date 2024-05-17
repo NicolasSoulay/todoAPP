@@ -12,7 +12,7 @@ export class AppComponent {
     {
       name: 'Listes',
       icon: 'list-outline',
-      route: '/lists'
+      route: '/listes'
     },
     {
       name: 'Archives',
