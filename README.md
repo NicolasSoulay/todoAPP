@@ -17,8 +17,9 @@ Exemples:
 - Une tache contient un texte, une date d’entrée, possiblement une date de fin, et possiblement une image (possible d’utiliser la camera ou une image locale).
 - Insertion de taches au clavier
 - TTS possible pour la lecture
+- possibilité de crée des modeles (templates) de listes
 - Notifications possible dans le cas ou il y a une date de fin
-- Share
+- Partage des liste & modeles
 
 ## Implementation
 
