@@ -11,8 +11,9 @@ Exemples:
 - Une liste d'objectif à accomplir sur le mois est une checklist éphémère dans le temps
 - Une liste de course est une checklist potentiellement récurante
 - Une recette de cuisine est une liste constante (pas de checkbox) mais jamais supprimé sauf si voulu
-
-
+  
+  
+  
 - Une tache contient un texte, une date d’entrée, possiblement une date de fin, et possiblement une image (possible d’utiliser la camera ou une image locale).
 - Insertion de taches au clavier
 - TTS possible pour la lecture
