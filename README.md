@@ -13,11 +13,11 @@ Exemples:
 - Une recette de cuisine est une liste constante (pas de checkbox) mais jamais supprimé sauf si voulu
 
 
-Une tache contient un texte, une date d’entrée, possiblement une date de fin, et possiblement une image (possible d’utiliser la camera ou une image locale).
-Insertion de taches au clavier
-TTS possible pour la lecture
-Notifications possible dans le cas ou il y a une date de fin
-Share
+- Une tache contient un texte, une date d’entrée, possiblement une date de fin, et possiblement une image (possible d’utiliser la camera ou une image locale).
+- Insertion de taches au clavier
+- TTS possible pour la lecture
+- Notifications possible dans le cas ou il y a une date de fin
+- Share
 
 ## Implementation
 
